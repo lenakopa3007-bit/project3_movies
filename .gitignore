@@ -1,0 +1,40 @@
+# ======= Системні файли та папки редакторів =======
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ======= Залежності проєкту (Dependencies) =======
+node_modules/
+/.pnp
+.pnp.js
+
+# ======= Папки збірки (Production build) =======
+build/
+dist/
+dist-ssr/
+
+# ======= Логи (Logs) =======
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ======= Тестування =======
+coverage/
+
+# ======= Секретні змінні оточення (Environment variables) =======
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local

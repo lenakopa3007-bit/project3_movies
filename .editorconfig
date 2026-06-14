@@ -1,0 +1,14 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+charset = utf-8
+
+[*.md]
+trim_trailing_whitespace = false
+# Цей файл автоматично налаштовує VS Code: робить відступи у 2 пробіли,
+# видаляє зайві пробіли в кінці рядків та захищає код від хаосу!
