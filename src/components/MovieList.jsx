@@ -88,10 +88,13 @@ export default function MoviesList({ movies }) {
                 style={posterStyles}
                 src={
                   movie.poster_path
-                    ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
+                    ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
                     : 'https://placehold.co/500x750?text=No+Poster'
                 }
                 alt={movie.title}
+                loading="lazy"
+                width="300"
+                height="450"
               />
               <p style={titleStyles}>{movie.title}</p>
             </li>
