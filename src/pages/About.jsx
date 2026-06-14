@@ -7,7 +7,7 @@ export default function About() {
         
         {/* блок із фотографією без жодних імпортів */}
         <PhotoWrapper>
-          <Photo src="./my_foto.webp" alt="My profile" />
+          <Photo src={`${process.env.PUBLIC_URL}/my_foto.webp`} alt="My profile" />
         </PhotoWrapper>
 
         <div style={{ flex: '1', minWidth: '300px' }}>

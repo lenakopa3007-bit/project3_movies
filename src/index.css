@@ -8,7 +8,7 @@
 body {
   margin: 0;
   /* базовий шрифт для всього тексту — Inter */
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

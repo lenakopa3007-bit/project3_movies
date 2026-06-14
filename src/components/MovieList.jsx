@@ -92,7 +92,8 @@ export default function MoviesList({ movies }) {
                     : 'https://placehold.co/500x750?text=No+Poster'
                 }
                 alt={movie.title}
-                loading="lazy"
+                loading={movies.indexOf(movie) < 3 ? 'eager' : 'lazy'} // перші 3 eager
+                fetchpriority={movies.indexOf(movie) === 0 ? 'high' : 'auto'}  // перший high
                 width="300"
                 height="450"
               />

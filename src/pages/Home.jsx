@@ -7,8 +7,8 @@ import { useTheme } from 'context/ThemeContext';
 export default function Home() {
   const { isDark } = useTheme();
   const [movies, setMovies] = useState([]);
-  // Стейт для контролю кількості карток на екрані (початково 9)
-  const [visibleCount, setVisibleCount] = useState(9);
+  // Стейт для контролю кількості карток на екрані (початково 6)
+  const [visibleCount, setVisibleCount] = useState(6);
 
   useEffect(() => {
     async function fetchMovies() {
@@ -20,7 +20,7 @@ export default function Home() {
 
   // Функція для кнопки "More"
   const handleLoadMore = () => {
-    setVisibleCount(prevCount => prevCount + 9);
+    setVisibleCount(prevCount => prevCount + 6);
   };
 
   // Обрізаємо масив мультфільмів до 9 (або більше при кліку)
@@ -50,7 +50,7 @@ export default function Home() {
         letterSpacing: '1px', 
         fontSize: '32px', 
         fontWeight: 700,
-        color: isDark ? '#e0e0e0' : '#1a1a2e',  // ← колір заголовку //
+        color: isDark ? '#e0e0e0' : '#1a1a2e',  // колір заголовку //
         }}>
         Popular cartoons
       </h1>
