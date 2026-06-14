@@ -1,0 +1,26 @@
+/* Переносимо глобальне скидання відступів на самий верх */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  /* базовий шрифт для всього тексту — Inter */
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-height: 100vh;
+  color: #333;
+  /* Додаємо приємний фоновий колір для всього сайту */
+  /*background: linear-gradient(180deg, #9dc0f6 0%, #d1e3ff 100%);
+    background-attachment: fixed; /* Фон залишається на місці при прокрутці */
+  transition: background 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
